@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #fff;
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    background-color: #2e5c77;
+    color: white;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin: 20px 0;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+  }
+  
+  .gallery img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* ทำให้ภาพเป็นสี่เหลี่ยมจัตุรัส */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    object-fit: cover;
+  }
+  
+  /* ปุ่ม HOME */
+  .home-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding: 12px 30px;
+    background-color: #3c3f58;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-size: 18px;
+    z-index: 1000;
+  }
+  
+  .home-btn:hover {
+    background-color: #2e2f44;
+  }
+  
